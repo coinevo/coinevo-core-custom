@@ -4,7 +4,7 @@
 =================
 
 
-diff -r src/common/base58.cpp /Users/paulshapiro/Documents/Repos/monero-core-custom/common/base58.cpp
+diff -r src/common/base58.cpp /Users/paulshapiro/Documents/Repos/coinevo-core-custom/common/base58.cpp
 38,39c38,39
 < #include "int-util.h"
 < #include "util.h"
@@ -71,7 +71,7 @@ account.cpp:
 ====================
 
 
-diff -r src/cryptonote_basic/cryptonote_basic_impl.cpp /Users/paulshapiro/Documents/Repos/monero-core-custom/cryptonote_basic/cryptonote_basic_impl.cpp
+diff -r src/cryptonote_basic/cryptonote_basic_impl.cpp /Users/paulshapiro/Documents/Repos/coinevo-core-custom/cryptonote_basic/cryptonote_basic_impl.cpp
 44c44
 < #include "common/dns_utils.h"
 ---
@@ -118,7 +118,7 @@ cryptonote_basic_impl
 =======================
 
 
-diff -r src/cryptonote_core/cryptonote_tx_utils.cpp /Users/paulshapiro/Documents/Repos/monero-core-custom/cryptonote_core/cryptonote_tx_utils.cpp
+diff -r src/cryptonote_core/cryptonote_tx_utils.cpp /Users/paulshapiro/Documents/Repos/coinevo-core-custom/cryptonote_core/cryptonote_tx_utils.cpp
 40c40
 < #include "cryptonote_basic/miner.h"
 ---
@@ -146,7 +146,7 @@ nt8_t hard_fork_version) {
 =============
 
 
-diff -r src/cryptonote_core/cryptonote_tx_utils.h /Users/paulshapiro/Documents/Repos/monero-core-custom/cryptonote_core/cryptonote_tx_utils.h
+diff -r src/cryptonote_core/cryptonote_tx_utils.h /Users/paulshapiro/Documents/Repos/coinevo-core-custom/cryptonote_core/cryptonote_tx_utils.h
 
 >  // bool construct_miner_tx(size_t height, size_t median_weight, uint64_t already_generated_coins, size_t current_block_weight, uint64_t fee, const account_public_address &miner_address, transaction& tx, const blobdata& extra_nonce = blobdata(), size_t max_outs = 999, uint8_t hard_fork_version = 1);
 
@@ -162,7 +162,7 @@ diff -r src/cryptonote_core/cryptonote_tx_utils.h /Users/paulshapiro/Documents/R
 
 
 
-diff -r src/ringct/bulletproofs.cc /Users/paulshapiro/Documents/Repos/monero-core-custom/ringct/bulletproofs.cc
+diff -r src/ringct/bulletproofs.cc /Users/paulshapiro/Documents/Repos/coinevo-core-custom/ringct/bulletproofs.cc
 32,33d31
 < #include <openssl/ssl.h>
 < #include <openssl/bn.h>
@@ -199,7 +199,7 @@ static rct::key invert(const rct::key &x)
 ==============
 
 
-diff -r src/ringct/rctSigs.cpp /Users/paulshapiro/Documents/Repos/monero-core-custom/ringct/rctSigs.cpp
+diff -r src/ringct/rctSigs.cpp /Users/paulshapiro/Documents/Repos/coinevo-core-custom/ringct/rctSigs.cpp
 32c32
 < #include "common/perf_timer.h"
 ---
